@@ -1,0 +1,20 @@
+.mediator-action {
+  display: none !important;
+}
+
+.mediator-result {
+  padding: 38px 30px;
+  gap: 12px;
+}
+
+.mediator-result span {
+  color: #fff;
+  font-size: clamp(2rem, 4.5vw, 3.6rem);
+  font-weight: 950;
+  line-height: 1;
+  letter-spacing: -.04em;
+}
+
+.mediator-result strong {
+  font-size: 1.25rem;
+}

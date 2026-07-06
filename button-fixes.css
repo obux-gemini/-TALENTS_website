@@ -1,0 +1,262 @@
+/* Einheitlicher Button-Vertrag für alle Seiten und Zustände. */
+.hero {
+  background-image: linear-gradient(90deg,rgba(255,253,249,.98) 0%,rgba(255,253,249,.95) 35%,rgba(255,253,249,.18) 68%),url('assets/hero-urban-team-corrected.png') !important;
+}
+
+.footer .logo {
+  width: 188px;
+  height: auto;
+  padding: 7px 9px;
+  border-radius: 10px;
+  background: #fff;
+  filter: none !important;
+}
+
+.nav-login {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 10px 18px;
+  border: 1px solid var(--teal);
+  border-radius: 999px;
+  color: var(--teal-dark);
+  font-weight: 850;
+  transition: .2s ease;
+}
+
+.nav-links .nav-login:hover,
+.nav-links .nav-login:focus-visible {
+  background: var(--teal);
+  color: #fff;
+}
+
+.btn {
+  min-height: 52px;
+  padding: 14px 24px;
+  gap: 8px;
+  border: 1px solid transparent;
+  line-height: 1.2;
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+.btn-primary,
+.btn-primary:visited {
+  background: var(--orange);
+  color: #fff;
+}
+
+.btn-secondary,
+.btn-secondary:visited {
+  background: var(--teal);
+  color: #fff;
+}
+
+.btn-ghost,
+.btn-ghost:visited {
+  border-color: var(--line);
+  background: #fff;
+  color: var(--ink);
+}
+
+.btn-primary:hover,
+.btn-primary:focus-visible,
+.btn-secondary:hover,
+.btn-secondary:focus-visible,
+.nav-links a.btn-primary:hover,
+.nav-links a.btn-primary:focus-visible {
+  color: #fff;
+}
+
+.btn-ghost:hover,
+.btn-ghost:focus-visible,
+.nav-links a.btn-ghost:hover,
+.nav-links a.btn-ghost:focus-visible {
+  color: var(--ink);
+}
+
+.btn:focus-visible {
+  outline: 3px solid rgba(7, 155, 155, .32);
+  outline-offset: 3px;
+}
+
+.hero-actions {
+  gap: 14px;
+  margin-top: 32px;
+}
+
+.feature-list + .btn {
+  margin-top: 32px;
+}
+
+.choice .btn {
+  align-self: flex-start;
+  margin-top: 32px;
+}
+
+.quote-band .btn {
+  margin: 0;
+}
+
+.form .btn {
+  margin-top: 4px;
+}
+
+.form .btn + .form-note {
+  margin-top: 16px;
+}
+
+.match-journey {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: stretch;
+}
+
+.journey-side {
+  padding: 34px;
+  border-radius: 28px;
+  background: #fff;
+  border: 1px solid var(--line);
+  box-shadow: 0 12px 35px rgba(16,37,38,.07);
+}
+
+.journey-candidate { border-top: 5px solid var(--teal); }
+.journey-recruiter { border-top: 5px solid var(--orange); }
+
+.journey-head {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.journey-head small,
+.match-result small {
+  display: block;
+  color: var(--muted);
+  font-weight: 850;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  font-size: .73rem;
+}
+
+.journey-head h3,
+.match-result h3 { margin: 3px 0 0; }
+
+.journey-icon {
+  flex: 0 0 54px;
+  height: 54px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--soft);
+  color: var(--teal-dark);
+  font-weight: 900;
+}
+
+.journey-recruiter .journey-icon {
+  background: #ffead7;
+  color: #bd5200;
+}
+
+.journey-side ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: journey;
+  display: grid;
+  gap: 17px;
+}
+
+.journey-side li {
+  counter-increment: journey;
+  position: relative;
+  padding-left: 38px;
+}
+
+.journey-side li:before {
+  content: counter(journey);
+  position: absolute;
+  left: 0;
+  top: -2px;
+  width: 25px;
+  height: 25px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--soft);
+  color: var(--teal-dark);
+  font-size: .78rem;
+  font-weight: 900;
+}
+
+.journey-recruiter li:before {
+  background: #ffead7;
+  color: #bd5200;
+}
+
+.match-result {
+  position: relative;
+  width: min(760px, 100%);
+  margin: 76px auto 0;
+  padding: 25px 30px;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  background: var(--teal);
+  color: #fff;
+  box-shadow: var(--shadow);
+}
+
+.match-result:before {
+  content: '↓';
+  position: absolute;
+  left: 50%;
+  top: -66px;
+  width: 54px;
+  height: 54px;
+  display: grid;
+  place-items: center;
+  border: 6px solid var(--soft);
+  border-radius: 50%;
+  background: var(--orange);
+  color: #fff;
+  font-size: 2rem;
+  line-height: 1;
+  font-weight: 900;
+  box-shadow: 0 10px 24px rgba(255,115,0,.25);
+  transform: translateX(-50%);
+}
+
+.match-result small { color: #d8ffff; }
+.match-heart {
+  flex: 0 0 52px;
+  height: 52px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #fff;
+  color: var(--teal-dark);
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+@media (max-width: 850px) {
+  .match-journey { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 520px) {
+  .btn {
+    width: 100%;
+    white-space: normal;
+  }
+}
+
+@media (max-width: 850px) {
+  .hero {
+    background-image: linear-gradient(180deg,rgba(255,253,249,.98) 0%,rgba(255,253,249,.9) 53%,rgba(255,253,249,.25) 100%),url('assets/hero-urban-team-corrected.png') !important;
+  }
+}

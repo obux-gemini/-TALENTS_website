@@ -1,0 +1,40 @@
+/* Unterseiten-Heros nutzen exakt dieselbe Grundstruktur wie die Startseite. */
+.hero.hero-candidate {
+  background-image: linear-gradient(90deg,rgba(255,253,249,.98) 0%,rgba(255,253,249,.95) 35%,rgba(255,253,249,.18) 68%),url('assets/candidate-hero-corrected.png') !important;
+  background-position: center !important;
+}
+
+.hero.hero-recruiter {
+  background-image: linear-gradient(270deg,rgba(255,253,249,.98) 0%,rgba(255,253,249,.95) 35%,rgba(255,253,249,.18) 68%),url('assets/recruiter-candidate-review.png') !important;
+  background-position: center !important;
+}
+
+.hero-recruiter .hero-copy {
+  margin-left: auto;
+}
+
+.hero-candidate .time-badge,
+.hero-recruiter .time-badge {
+  margin-top: 24px;
+}
+
+.hero-candidate .hero-actions,
+.hero-recruiter .hero-actions {
+  margin-top: 24px;
+}
+
+@media(max-width:850px) {
+  .hero.hero-candidate {
+    background-image: linear-gradient(180deg,rgba(255,253,249,.98) 0%,rgba(255,253,249,.9) 53%,rgba(255,253,249,.25) 100%),url('assets/candidate-hero-corrected.png') !important;
+    background-position: 62% center !important;
+  }
+
+  .hero.hero-recruiter {
+    background-image: linear-gradient(180deg,rgba(255,253,249,.98) 0%,rgba(255,253,249,.9) 53%,rgba(255,253,249,.25) 100%),url('assets/recruiter-candidate-review.png') !important;
+    background-position: 36% center !important;
+  }
+
+  .hero-recruiter .hero-copy {
+    margin-left: 0;
+  }
+}
